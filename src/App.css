@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+    --color-background: #FAF9F6;
+    --color-surface: #FFFFFF;
+    --color-mist: #F1F4EF;
+
+    --color-green: #6F8F72;
+    --color-forest: #254D3A;
+    --color-green-light: #DDE8DD;
+
+    --color-navy: #092A4A;
+    --color-ruby: #A71924;
+
+    --color-champagne: #E5D8C5;
+    --color-gold: #D9B06B;
+
+    --color-text: #26312B;
+    --color-text-light: #6B756E;
+
+    --color-border: #DEE4DE;
+}
+
+@theme {
+    --color-brand-background: #FAF9F6;
+    --color-brand-surface: #FFFFFF;
+    --color-brand-mist: #F1F4EF;
+
+    --color-brand-green: #6F8F72;
+    --color-brand-forest: #254D3A;
+    --color-brand-green-light: #DDE8DD;
+
+    --color-brand-navy: #092A4A;
+    --color-brand-ruby: #A71924;
+
+    --color-product-blue: #092A4A;
+    --color-product-red: #A71924;
+
+    --color-brand-champagne: #E5D8C5;
+    --color-brand-gold: #C8A96B;
+
+    --color-brand-text: #26312B;
+    --color-brand-text-light: #6B756E;
+
+    --color-brand-border: #DEE4DE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+/* CONTAINER */
+
+.custom-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+    .custom-container {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-container {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .custom-container {
+        padding: 0 48px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .custom-container {
+        padding: 0 60px;
+    }
+}
+
+
+/* SECTION */
+
+.section {
+    padding: 80px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+    }
+}
+
+
+/* SECTION TITLE */
+.section-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    color: var(--color-navy);
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+/* Luxury underline */
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 40%;
+    background: var(--color-ruby);
+    transition: width 0.4s ease;
+    border-radius: 2px;
+}
+
+.section-title:hover {
+    color: var(--color-ruby);
+}
+
+.section-title:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title::after {
+        height: 2px;
+        bottom: -4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.2rem;
+    }
+
+    .section-title::after {
+        bottom: -3px;
+    }
+}
+
+
+/* SECTION PARAGRAPH */
+
+.section-paragraph {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0.5rem auto 2rem;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .section-paragraph {
+        font-size: 0.95rem;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-paragraph {
+        font-size: 0.9rem;
+        max-width: 100%;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-paragraph {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+}
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F4EF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6F8F72;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #254D3A;
+}
