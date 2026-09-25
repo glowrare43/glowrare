@@ -133,7 +133,7 @@ main {
     font-size: 2rem;
     position: relative;
     display: inline-block;
-    color: var(--color-navy);
+    color: var(--color-forest);
     margin-bottom: 1rem;
     transition: color 0.3s ease;
 }
@@ -146,13 +146,13 @@ main {
     bottom: -6px;
     height: 3px;
     width: 40%;
-    background: var(--color-ruby);
+    background: var(--color-forest);
     transition: width 0.4s ease;
     border-radius: 2px;
 }
 
 .section-title:hover {
-    color: var(--color-ruby);
+    color: var(--color-forest);
 }
 
 .section-title:hover::after {

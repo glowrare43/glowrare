@@ -1,13 +1,13 @@
 import ProductBanner from "./ProductBanner";
 import ProductSection from "./ProductSection";
-import WhyShop from "./WhyShop";
+import ProductRemarks from "./ProductRemarks"
 
 const Product = () => {
     return (
         <main>
             <ProductBanner />
             <ProductSection />
-            <WhyShop />
+            <ProductRemarks />
         </main>
     )
 }

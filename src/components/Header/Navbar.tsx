@@ -35,20 +35,20 @@ export default function Navbar() {
             <header className={`sticky! top-0! z-50! w-full! transition-all! duration-300! shadow-sm bg-white`}>
                 <div className={`custom-container flex! items-center! justify-between! transition-all! duration-300! h-20!`}>
                     {/* LEFT: Logo */}
-                    <a href="/" className="flex items-center gap-3 shrink-0 group">
+                    <Link to="/" className="flex items-center gap-3 shrink-0 group">
                         <div className="leading-tight">
                             <div className={`font-serif font-semibold tracking-wide text-[#111827] transition-all duration-300 text-xl`}>
                                 GLOWRARE
                             </div>
                         </div>
-                    </a>
+                    </Link>
 
                     {/* CENTER: Navigation */}
                     <nav className="hidden! lg:flex! items-center! gap-1!">
                         <NavLink href="/">Home</NavLink>
-                        <NavLink href="#about">About Us</NavLink>
+                        <NavLink href="/about">About Us</NavLink>
                         <NavLink href="/product">Products</NavLink>
-                        <NavLink href="#blog">Bundles</NavLink>
+                        <NavLink href="/bundles">Bundles</NavLink>
                         <NavLink href="/contact">Contact</NavLink>
                     </nav>
 
@@ -123,10 +123,10 @@ export default function Navbar() {
 
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
     return (
-        <Link to={href} className="group/link px-4! py-2! text-md! font-medium! text-[#1F2937]! hover:text-[#D4AF37]! transition-colors!">
+        <Link to={href} className="group/link px-4! py-2! text-md! font-medium! text-[#1F2937]! hover:text-brand-forest! transition-colors!">
             <span className="relative!">
                 {children}
-                <span className="absolute! left-0! -bottom-1! h-px! w-full! origin-left! scale-x-0! bg-[#D4AF37]! transition-transform! duration-300! group-hover/link:scale-x-100!" />
+                <span className="absolute! left-0! -bottom-1! h-px! w-full! origin-left! scale-x-0! bg-brand-forest! transition-transform! duration-300! group-hover/link:scale-x-100!" />
             </span>
         </Link>
     )
@@ -134,7 +134,7 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
 
 function IconBtn({ children, label, className = "", }: { children: React.ReactNode; label: string; className?: string }) {
     return (
-        <button aria-label={label} className={`relative! p-2! rounded-full! text-[#1F2937]! hover:text-[#D4AF37]! hover:bg-[#F9FAFB]! transition-all! duration-200! ${className}`}>
+        <button aria-label={label} className={`relative! p-2! rounded-full! text-[#1F2937]! hover:text-brand-forest! hover:bg-[#F9FAFB]! transition-all! duration-200! ${className}`}>
             {children}
         </button>
     )

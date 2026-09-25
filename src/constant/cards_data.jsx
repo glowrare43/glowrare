@@ -53,35 +53,3 @@ export const testimonialsCardData = [
             "My favourite skincare products. The whitening cream gives wonderful results.",
     },
 ];
-
-
-export const shopProductsCardData = [
-    {
-        id: 1,
-        image: Product1,
-        name: "Glowrare Hand & Foot Cream",
-        price: "Rs. 1,450/-",
-        priceValue: 1450,
-        badge: "NEW",
-        badgeClass: "bg-[#e85c88]",
-    },
-    {
-        id: 2,
-        image: Product2,
-        name: "Glowrare Face Wash",
-        price: "Rs. 1,250/-",
-        priceValue: 1250,
-        badge: "SALE",
-        badgeClass: "bg-[#9f2d48]",
-    },
-    {
-        id: 3,
-        image: Product3,
-        name: "Glowrare Whitening Cream",
-        price: "Rs. 1,650/-",
-        priceValue: 1650,
-        badge: "NEW",
-        badgeClass: "bg-[#e85c88]",
-    },
-];
-
