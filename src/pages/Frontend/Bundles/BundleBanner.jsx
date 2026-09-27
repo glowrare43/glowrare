@@ -17,7 +17,7 @@ const BundleBanner = () => {
                             </span>
 
                             <h1 className="m-0! text-4xl! sm:text-5xl! lg:text-6xl! leading-[1.1]! font-serif! font-medium! text-brand-surface!">
-                              SAVE MORE, GLOW MORE
+                                SAVE MORE, GLOW MORE
                             </h1>
 
                             <p className="mt-5! mb-6! max-w-140! text-sm! sm:text-base! leading-7! text-white/85!">

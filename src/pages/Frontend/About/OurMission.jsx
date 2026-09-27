@@ -86,7 +86,7 @@ const OurMission = () => {
                         </div>
 
                         {/* CTA */}
-                        <Link to="/product" className="group mx-auto! inline-flex! w-fit! items-center! gap-3! rounded-full! bg-brand-forest! px-7! py-3.5! text-[15px]! font-semibold! text-white! shadow-[0_10px_30px_rgba(37,77,58,0.18)]! transition-all! duration-300! hover:-translate-y-1! hover:bg-brand-green! hover:shadow-[0_15px_35px_rgba(37,77,58,0.25)]! lg:mx-0!">
+                        <Link to="/products" className="group mx-auto! inline-flex! w-fit! items-center! gap-3! rounded-full! bg-brand-forest! px-7! py-3.5! text-[15px]! font-semibold! text-white! shadow-[0_10px_30px_rgba(37,77,58,0.18)]! transition-all! duration-300! hover:-translate-y-1! hover:bg-brand-green! hover:shadow-[0_15px_35px_rgba(37,77,58,0.25)]! lg:mx-0!">
                             Explore Products
                             <span className="transition-transform! duration-300! group-hover:translate-x-1!">→</span>
                         </Link>

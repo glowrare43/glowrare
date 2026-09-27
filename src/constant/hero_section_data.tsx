@@ -1,6 +1,6 @@
 import blueVariant from "../assets/hero-blue-variant.png";
 import redVariant from "../assets/hero-red-variant.png";
-import collectiveVariant from "../assets/hero-collective-pic.png";
+import collectiveVariant from "../assets/top-seller-bundle.png";
 
 export const SLIDES = [
     {

@@ -34,7 +34,7 @@ const ProductCard = ({ data }) => {
                 </h3>
 
                 <p className="mx-auto! mt-1.25! mb-2! min-h-8.5! max-w-72.5! overflow-hidden! text-[11px]! sm:text-[11.5px]! md:text-[12px]! font-normal! leading-4.5! text-brand-muted! line-clamp-2!">
-                    {data?.description}
+                    {data?.shortDescription}
                 </p>
 
 
@@ -45,7 +45,7 @@ const ProductCard = ({ data }) => {
 
                 <div className="mt-3.25! flex! gap-2!">
                     {/* View Detail */}
-                    <Link to="#" className="flex! min-h-9.25! flex-1! items-center! justify-center! gap-1.5! rounded-md!
+                    <Link to={`/productDetails/${data?.slug}`} className="flex! min-h-9.25! flex-1! items-center! justify-center! gap-1.5! rounded-md!
                     border! border-brand-forest! bg-transparent! px-3! py-2.25! text-[11px]! sm:text-[11.5px]! md:text-[12px]! font-semibold! tracking-[0.2px]! text-brand-forest! no-underline! transition-all! duration-300!
                     hover:-translate-y-0.5! hover:bg-brand-forest! hover:text-white! hover:shadow-[0_8px_18px_rgba(37,77,58,0.14)]!"
                     >

@@ -1,13 +1,15 @@
+import { Autoplay, FreeMode } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import TestimonialCard from "../../../components/cards/TestimonialCard";
 import { testimonialsCardData } from "../../../constant/cards_data";
 
 const Testimonials = () => {
     return (
-        <section className="section bg-brand-background">
+        <section className="section overflow-hidden! bg-brand-background">
             <div className="custom-container">
 
                 <div className="mx-auto! mb-14! max-w-3xl! text-center! lg:mb-18!">
-
                     <span className="mb-3! inline-block! text-sm! font-semibold! uppercase! tracking-[0.2em]! text-brand-ruby!">
                         Our Testimonials
                     </span>
@@ -22,11 +24,35 @@ const Testimonials = () => {
                     </p>
                 </div>
 
-                <div className="grid! grid-cols-1! gap-6! md:grid-cols-2! lg:grid-cols-3!">
+                <Swiper
+                    modules={[Autoplay, FreeMode]}
+                    slidesPerView={1}
+                    spaceBetween={24}
+                    loop={true}
+                    loopAdditionalSlides={6}
+                    freeMode={{ enabled: true, momentum: false, }}
+                    speed={5000}
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                    className="testimonials-swiper!"
+                >
                     {testimonialsCardData.map((testimonial, index) => (
-                        <TestimonialCard data={testimonial} key={index} />
+                        <SwiperSlide key={index}>
+                            <TestimonialCard data={testimonial} />
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
 
             </div>
         </section>

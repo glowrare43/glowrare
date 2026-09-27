@@ -18,45 +18,58 @@ const socialLinks = [
     },
     {
         name: "LinkedIn",
-        url: window.links.linkedin,
-        icon: "fa-brands fa-linkedin-in",
+        url: window.links.tiktok,
+        icon: "fa-brands fa-tiktok",
     },
 ];
 
 const quickLinks = [
     { label: "Home", path: "/" },
     { label: "About Us", path: "/about" },
-    { label: "Courses", path: "/courses" },
+    { label: "Product", path: "/products" },
     { label: "Contact", path: "/contact" },
-    { label: "FAQs", path: "/faqs" },
+    { label: "Bundles", path: "/bundles" },
 ];
 
-const courses = [
-    "Web & Mobile Development",
-    "App Development",
-    "Digital Marketing",
-    "Python Programming",
-    "UI / UX Designing",
+const policies = [
+    {
+        label: "Privacy Policy",
+        path: "/policies/privacy-policy",
+    },
+    {
+        label: "Exchange & Return Policy",
+        path: "/policies/exchange-return-policy",
+    },
+    {
+        label: "Contact Information",
+        path: "/policies/contact-information",
+    },
+    {
+        label: "Terms of Service",
+        path: "/policies/terms-of-service",
+    },
+    {
+        label: "Shipping Policy",
+        path: "/policies/shipping-policy",
+    },
 ];
 
 const contactInfo = [
     {
         icon: "fa-solid fa-phone",
-        content: "+92 310 5056 666",
+        content: "+92 320 0040536",
     },
     {
         icon: "fa-solid fa-envelope",
-        content: "lahza.legacy@gmail.com",
+        content: "info@glowrare.com",
     },
     {
         icon: "fa-solid fa-clock",
-        content: "Mon–Fri: 9:00 AM – 6:00 PM",
+        content: "Mon - Sat (10:00 AM - 8:00 PM)",
     },
     {
         icon: "fa-solid fa-location-dot",
-        content:
-            "The Legacy International College, Kohinoor City, Faisalabad.",
-        alignTop: true,
+        content: "123 Beauty Street, Canal Road, Faisalabad, Pakistan",
     },
 ];
 
@@ -77,10 +90,10 @@ const FooterLink = ({ to, children }) => (
 const MainFooter = () => {
     return (
         <footer className="bg-brand-forest! text-brand-surface!">
-            
+
             {/* Main Footer */}
             <div className="custom-container py-10! sm:py-12! lg:py-14!">
-                
+
                 <div
                     className="
                         grid!
@@ -95,12 +108,10 @@ const MainFooter = () => {
 
                     {/* About */}
                     <div className="w-full">
-                        <FooterHeading>About</FooterHeading>
+                        <FooterHeading>Glowrare</FooterHeading>
 
                         <p className="text-sm! sm:text-base! leading-6! sm:leading-7! m-0! max-w-md!">
-                            Lahza is a leading IT institute offering
-                            career-oriented courses to help students grow
-                            in the tech industry.
+                            Premium skincare and beauty products for healthy, glowing skin.
                         </p>
 
                         {/* Social Links */}
@@ -145,26 +156,26 @@ const MainFooter = () => {
                         </ul>
                     </div>
 
-                    {/* Courses */}
+                    {/* Policies */}
                     <div className="w-full">
-                        <FooterHeading>Courses</FooterHeading>
+                        <FooterHeading>Policies</FooterHeading>
 
                         <ul className="list-none! p-0! m-0! space-y-2! sm:space-y-3!">
-                            {courses.map((course) => (
-                                <li key={course}>
+                            {policies.map(({ label, path }) => (
+                                <li key={path}>
                                     <Link
-                                        to="/courses"
+                                        to={path}
                                         className="
-                                            inline-block!
-                                            text-sm! sm:text-base!
-                                            no-underline!
-                                            transition-all!
-                                            duration-200!
-                                            hover:text-brand-gold!
-                                            hover:translate-x-1!
-                                        "
+                        inline-block!
+                        text-sm! sm:text-base!
+                        no-underline!
+                        transition-all!
+                        duration-200!
+                        hover:text-brand-gold!
+                        hover:translate-x-1!
+                    "
                                     >
-                                        {course}
+                                        {label}
                                     </Link>
                                 </li>
                             ))}
@@ -186,10 +197,9 @@ const MainFooter = () => {
                                             transition-colors!
                                             duration-300!
                                             hover:text-brand-gold!
-                                            ${
-                                                alignTop
-                                                    ? "items-start!"
-                                                    : "items-center!"
+                                            ${alignTop
+                                                ? "items-start!"
+                                                : "items-center!"
                                             }
                                         `}
                                     >
@@ -200,10 +210,9 @@ const MainFooter = () => {
                                                 shrink-0!
                                                 w-4!
                                                 text-center!
-                                                ${
-                                                    alignTop
-                                                        ? "mt-1!"
-                                                        : ""
+                                                ${alignTop
+                                                    ? "mt-1!"
+                                                    : ""
                                                 }
                                             `}
                                         ></i>

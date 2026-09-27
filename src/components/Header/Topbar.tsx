@@ -3,9 +3,9 @@ const Topbar = () => {
         <div className="hidden md:block bg-brand-forest text-white text-xs">
             
             <div className="custom-container flex! items-center! justify-between! py-3!">
-                <a href="tel:+923105056666" className="flex! items-center! gap-2! text-brand-green-light! hover:text-white! transition-colors!">
+                <a href="tel:+923200040536" className="flex! items-center! gap-2! text-brand-green-light! hover:text-white! transition-colors!">
                     <i className="fa-solid fa-phone text-brand-gold"></i>
-                    <span className="font-medium!">+92 310 5056666</span>
+                    <span className="font-medium!">+92 320 0040536</span>
                 </a>
 
                 <div className="flex! items-center! gap-2!">

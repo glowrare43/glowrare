@@ -1,9 +1,9 @@
 window.links = {
-    whatsapp: "https://api.whatsapp.com/send?phone=923105056666",
-    phone: "tel:+923105056666",
-    facebook: "https://www.facebook.com/profile.php?id=61573493296416",
-    instagram: "https://www.instagram.com/lahza_net?igsh=bTJqZXZvNWpseTI3",
-    linkedin: "https://www.linkedin.com/company/lahza.net/",
+    whatsapp: "https://api.whatsapp.com/send?phone=923200040536",
+    phone: "tel:+923200040536",
+    facebook: "https://www.facebook.com/share/1JmPyGdGjx/",
+    instagram: "https://www.instagram.com/glowrare43?igsh=M21oOGp0YWdqNzhl&igsi=M21oOGp0YWdqNzhl",
+    tiktok: "https://www.tiktok.com/@glowrare0?_r=1&_t=ZS-98zgjHuWdiT",
     email: "mailto:lahza.legacy@gmail.com",
     location: "https://maps.app.goo.gl/eXv9rNb84w7t5nXx6",
 }

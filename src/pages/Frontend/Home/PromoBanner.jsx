@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import promoBg from '../../../assets/promo-bg.png'
 
 const PromoBanner = () => {
@@ -35,14 +36,14 @@ const PromoBanner = () => {
                                 your skin. Enjoy exclusive discounts for a limited time.
                             </p>
 
-                            <a href="/catalog"  className="group
+                            <Link to="/products"  className="group
                                     mt-7! inline-flex! items-center! gap-3! rounded-lg! px-7! py-3.5! text-[13px]! font-semibold!
                                     bg-brand-champagne !text-brand-forest! shadow-[0_10px_30px_rgba(0,0,0,0.15)]
                                     transition-all duration-300  hover:bg-brand-gold hover:text-white hover:shadow-[0_15px_35px_rgba(0,0,0,0.25)]"
                             >
                                 Shop Now
                                 <i className="fa-solid fa-arrow-right text-xs! transition-transform! duration-300! group-hover:translate-x-1!"></i>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

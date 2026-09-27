@@ -47,7 +47,7 @@ export default function Navbar() {
                     <nav className="hidden! lg:flex! items-center! gap-1!">
                         <NavLink href="/">Home</NavLink>
                         <NavLink href="/about">About Us</NavLink>
-                        <NavLink href="/product">Products</NavLink>
+                        <NavLink href="/products">Products</NavLink>
                         <NavLink href="/bundles">Bundles</NavLink>
                         <NavLink href="/contact">Contact</NavLink>
                     </nav>
