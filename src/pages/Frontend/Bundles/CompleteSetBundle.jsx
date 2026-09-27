@@ -1,7 +1,23 @@
 import React from "react";
-import CompleteSetBundlePic from "../../../assets/CompleteSetBundle.png"
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../../store/slices/cart_slice";
+import CompleteSetBundlePic from "../../../assets/CompleteSetBundle.png";
 
 const CompleteSetBundle = () => {
+    const dispatch = useDispatch();
+
+    const handleAddToCart = () => {
+        dispatch(
+            addToCart({
+                id: "complete-glow-set",
+                name: "Complete Glow Set",
+                price: 2600,
+                image: CompleteSetBundlePic,
+                quantity: 1,
+            })
+        )
+    }
+
     return (
         <section className="section">
             <div className="custom-container">
@@ -60,9 +76,8 @@ const CompleteSetBundle = () => {
                             </div>
 
                             <button
-                                data-name="Complete Glow Set"
-                                data-price="2600"
-                                data-image="/assests/bundle 04.png"
+                                type="button"
+                                onClick={handleAddToCart}
                                 className="inline-flex! w-fit! items-center! justify-center! gap-2.5! rounded-[7px]! border! border-brand-forest! bg-brand-forest! px-7! py-3.5! text-[13.5px]! font-semibold! text-white! shadow-[0_12px_25px_-14px_rgba(37,77,58,0.7)]! transition-all! duration-300! hover:-translate-y-0.5! hover:border-brand-ruby! hover:bg-brand-ruby! hover:shadow-[0_16px_28px_-14px_rgba(167,25,36,0.45)]! active:translate-y-0! max-[600px]:mx-auto! max-[500px]:w-full!"
                             >
                                 <i className="fa-solid fa-cart-shopping" />

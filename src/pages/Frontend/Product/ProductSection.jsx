@@ -3,7 +3,7 @@ import ProductCard from '../../../components/cards/ProductCard'
 
 const ProductSection = () => {
     return (
-        <section className="section">
+        <section className="section pt-0!">
             <div className="custom-container">
 
                 <div className=" text-center! mb-15!">
@@ -16,7 +16,7 @@ const ProductSection = () => {
                         Explore our full range of premium skincare essentials.
                     </p>
                 </div>
-                
+
                 <div className="grid grid-cols-2! gap-8.75! max-[850px]:gap-6.25! max-[650px]:grid-cols-1!">
                     {productsData.map((product, index) => (
                         <div key={index} className={`${index === 2 ? "col-span-2! flex! justify-center! max-[650px]:col-span-1!" : ""}`}>

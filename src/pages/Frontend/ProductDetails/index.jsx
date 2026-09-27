@@ -1,10 +1,14 @@
-import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { productsData } from "../../../constant/cards_data";
+import { useState } from "react"
+import { useDispatch } from "react-redux"
+import { Link, useParams } from "react-router-dom"
+import { productsData } from "../../../constant/cards_data"
+import { addToCart } from "../../../store/slices/cart_slice"
 
 const ProductDetails = () => {
-    const { slug } = useParams();
-    const [quantity, setQuantity] = useState(1);
+    const { slug } = useParams()
+    const dispatch = useDispatch()
+    const [quantity, setQuantity] = useState(1)
+
 
     const product = productsData.find((item) => item.slug === slug);
 
@@ -30,13 +34,26 @@ const ProductDetails = () => {
         if (quantity < product.stockQuantity) {
             setQuantity((prev) => prev + 1);
         }
-    };
+    }
 
     const decreaseQuantity = () => {
         if (quantity > 1) {
             setQuantity((prev) => prev - 1);
         }
-    };
+    }
+
+    const handleAddToCart = () => {
+        const productDetails = {
+            id: product.id,
+            slug: product.slug,
+            name: product.name,
+            image: product.image,
+            price: Number(product.price.replace(/[^0-9]/g, "")),
+            quantity,
+        }
+
+        dispatch(addToCart(productDetails))
+    }
 
     return (
         <section className="section bg-brand-background!">
@@ -145,6 +162,7 @@ const ProductDetails = () => {
 
                             <button
                                 className="flex! h-14! flex-1! items-center! justify-center! gap-3! rounded-xl! bg-brand-forest! px-7! font-semibold! text-white! shadow-[0_10px_25px_rgba(37,77,58,0.16)]! transition-all! duration-300! hover:-translate-y-0.5! hover:bg-brand-green! hover:shadow-[0_14px_30px_rgba(37,77,58,0.22)]! disabled:cursor-not-allowed! disabled:opacity-50!"
+                                onClick={handleAddToCart}
                             >
                                 <i className="fa-solid fa-cart-shopping text-sm!" />
                                 Add To Cart

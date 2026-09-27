@@ -9,6 +9,8 @@ import Bundles from './Bundles'
 import ProductDetails from './ProductDetails'
 import Policies from './Policies'
 import ScrollToTop from '../../utils/ScrollToTop'
+import Cart from './Cart'
+import Checkout from './Checkout'
 
 const Frontend = () => {
     return (
@@ -24,6 +26,8 @@ const Frontend = () => {
                     <Route path='products' element={<Product />} />
                     <Route path='productDetails/:slug' element={<ProductDetails />} />
                     <Route path='policies/*' element={<Policies />} />
+                    <Route path='cart' element={<Cart />} />
+                    <Route path='checkout' element={<Checkout />} />
                 </Routes>
             </main>
             <Footer />
