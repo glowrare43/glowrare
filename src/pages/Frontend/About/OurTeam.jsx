@@ -9,7 +9,7 @@ const OurTeam = () => {
     const team = [
         { image: Team1, name: "Fahad Farooq", role: "Founder & CEO" },
         { image: Team2, name: "Danish Ali", role: "Marketing Manager" },
-        { image: Team3, name: "Hina Raza", role: "Customer Support" },
+        { image: Team3, name: "Sundas Zafar", role: "Customer Support" },
     ]
 
     return (
