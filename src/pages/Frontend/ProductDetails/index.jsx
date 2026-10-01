@@ -9,7 +9,6 @@ const ProductDetails = () => {
     const dispatch = useDispatch()
     const [quantity, setQuantity] = useState(1)
 
-
     const product = productsData.find((item) => item.slug === slug);
 
     if (!product) {
@@ -30,17 +29,18 @@ const ProductDetails = () => {
         );
     }
 
+
     const increaseQuantity = () => {
-        if (quantity < product.stockQuantity) {
-            setQuantity((prev) => prev + 1);
-        }
+        setQuantity((prev) => prev + 1);
     }
 
     const decreaseQuantity = () => {
-        if (quantity > 1) {
-            setQuantity((prev) => prev - 1);
-        }
+        setQuantity((prev) => Math.max(1, prev - 1));
     }
+
+
+    const unitPrice = Number(product?.price?.replace(/[^0-9]/g, "") || 0);
+    const totalPrice = unitPrice * quantity;
 
     const handleAddToCart = () => {
         const productDetails = {
@@ -116,9 +116,9 @@ const ProductDetails = () => {
                         </div>
 
                         {/* Price */}
-                        <div className="mt-6! flex! items-center! gap-3!">
+                        <div className="mt-6! flex! flex-wrap! items-center! gap-3!">
                             <span className="text-3xl! font-bold! text-brand-forest!">
-                                {product.price}
+                                Rs. {totalPrice.toLocaleString("en-PK")}
                             </span>
 
                             {product.oldPrice && (
@@ -141,7 +141,6 @@ const ProductDetails = () => {
                                 <button
                                     type="button"
                                     onClick={decreaseQuantity}
-                                    disabled={quantity === 1}
                                     className="h-full! w-12! text-lg! text-brand-text! transition-colors! hover:bg-brand-mist! disabled:cursor-not-allowed! disabled:opacity-40!"
                                 >
                                     −

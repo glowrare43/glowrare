@@ -11,7 +11,7 @@ const Topbar = () => {
                 <div className="flex! items-center! gap-2!">
                     <i className="fa-solid fa-gem text-brand-gold"></i>
                     <span className="font-medium! tracking-wide! text-brand-green-light!">
-                        Premium Unstitched & Stitched Fabrics
+                       Get Visible Results in 1-2 Weeks
                     </span>
                 </div>
 

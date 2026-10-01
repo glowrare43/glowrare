@@ -3,7 +3,7 @@ const GetTouch = () => {
         {
             icon: "fa-solid fa-location-dot",
             title: "Our Location",
-            content: (<>123 Beauty Street,<br />Canal Road,<br />Faisalabad, Pakistan</>),
+            content: (<>Canal Road,<br />Faisalabad, Pakistan</>),
         },
         {
             icon: "fa-solid fa-phone",
@@ -13,7 +13,7 @@ const GetTouch = () => {
         {
             icon: "fa-solid fa-envelope",
             title: "Email Us",
-            content: (<>hello@glowrare.com<br />We reply within 24 hours</>),
+            content: (<>glowrare43@gmail.com<br />We reply within 24 hours</>),
         },
         {
             icon: "fa-regular fa-clock",

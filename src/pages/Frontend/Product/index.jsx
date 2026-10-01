@@ -1,6 +1,6 @@
 import ProductBanner from "./ProductBanner";
 import ProductSection from "./ProductSection";
-import ProductRemarks from "./ProductRemarks"
+import Testimonials from "../Home/Testimonials"
 import WhyGlowrare from "./WhyGlowrare";
 
 const Product = () => {
@@ -8,7 +8,7 @@ const Product = () => {
         <main>
             <ProductBanner />
             <ProductSection />
-            <ProductRemarks />
+            <Testimonials />
             <WhyGlowrare />
         </main>
     )

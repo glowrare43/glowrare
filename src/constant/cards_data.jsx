@@ -1,6 +1,6 @@
 import Product1 from '../assets/product-1.png'
 import Product2 from '../assets/product-2.jpg'
-import Product3 from '../assets/product-3.jpg'
+import Product3 from '../assets/product-3.png'
 
 export const productsData = [
     {

@@ -1,4 +1,5 @@
 import React from "react";
+import PromotionVideo from "../../../assets/promotion.mp4"
 
 const OurStory = () => {
     return (
@@ -54,41 +55,27 @@ const OurStory = () => {
 
                         {/* Decorative Frame */}
                         <div className="absolute! -bottom-4! -right-4! h-28! w-28! rounded-br-[28px]! border-b-2! border-r-2! border-brand-gold! opacity-70!" />
+
                         <div className="absolute! -left-4! -top-4! h-28! w-28! rounded-tl-[28px]! border-l-2! border-t-2! border-brand-green! opacity-70!" />
 
                         <div className="relative! overflow-hidden! rounded-[28px]! border! border-brand-border! bg-brand-surface! p-2! shadow-xl!">
 
-                            <a href="/assests/promotion video.mp4" target="_blank" rel="noreferrer" className="relative! block! overflow-hidden! rounded-[22px]!">
-                                <img src="/assests/promtion 1.jpeg" alt="Glowrare Story"
-                                    className="h-95! w-full! object-cover! transition-transform! duration-700! group-hover:scale-105! sm:h-112.5!"
-                                />
+                            <div className="relative! overflow-hidden! rounded-[22px]!">
 
-                                {/* Image Overlay */}
-                                <div className="absolute! inset-0! bg-linear-to-t! from-brand-forest/80! via-brand-forest/15! to-transparent!" />
+                                {/* Video */}
+                                <video
+                                    src={PromotionVideo}
+                                    playsInline
+                                    preload="metadata"
+                                    muted
+                                    autoPlay
+                                    loop
+                                    className="h-95! w-full! object-cover! sm:h-112.5!"
+                                >
+                                    Your browser does not support video playback.
+                                </video>
 
-                                {/* Play Button */}
-                                <div className="absolute! left-1/2! top-[43%]! flex! h-18! w-18! -translate-x-1/2! -translate-y-1/2! items-center! justify-center! rounded-full! border! border-white/70! bg-white/95! text-brand-forest! shadow-[0_10px_35px_rgba(0,0,0,0.18)]! transition-all! duration-300! group-hover:scale-110! group-hover:bg-brand-green! group-hover:text-white! sm:h-22! sm:w-22!">
-                                    <i className="fa-solid fa-play ml-1! text-xl! sm:text-2xl!" />
-                                </div>
-
-                                {/* Bottom Content */}
-                                <div className="absolute! bottom-7! left-1/2! w-[85%]! -translate-x-1/2! text-center! text-white!">
-                                    <div className="mb-3! flex! items-center! justify-center! gap-2! text-[10px]! font-bold! uppercase! tracking-[3px]! text-brand-champagne!">
-                                        <span className="h-px! w-6! bg-brand-champagne!" />
-                                        Our Journey
-                                        <span className="h-px! w-6! bg-brand-champagne!" />
-                                    </div>
-
-                                    <h3 className="mb-2! font-serif! text-3xl! leading-tight! sm:text-[38px]!">
-                                        Watch Our Journey
-                                    </h3>
-
-                                    <p className="mx-auto! max-w-125! text-sm! leading-[1.7]! text-white/85! sm:text-[15px]!">
-                                        Discover how Glowrare is creating a
-                                        thoughtful and confident approach to beauty.
-                                    </p>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
 

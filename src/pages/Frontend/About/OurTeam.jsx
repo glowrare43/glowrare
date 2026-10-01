@@ -1,14 +1,14 @@
 import React from "react";
 import TeamCard from "../../../components/cards/TeamCard";
-import Team1 from "../../../assets/team-ceo.jpg"
-import Team2 from "../../../assets/team-marketing.jpg"
+import Team1 from "../../../assets/team-ceo.png"
+import Team2 from "../../../assets/team-marketing.png"
 import Team3 from "../../../assets/team-sale.jpg"
 
 
 const OurTeam = () => {
     const team = [
-        { image: Team1, name: "Ayesha Khan", role: "Founder & CEO" },
-        { image: Team2, name: "Sara Malik", role: "Marketing Manager" },
+        { image: Team1, name: "Fahad Farooq", role: "Founder & CEO" },
+        { image: Team2, name: "Danish Ali", role: "Marketing Manager" },
         { image: Team3, name: "Hina Raza", role: "Customer Support" },
     ]
 

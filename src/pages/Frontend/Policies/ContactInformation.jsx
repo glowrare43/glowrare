@@ -39,7 +39,7 @@ const ContactInformation = () => {
                     </h3>
 
                     <p className="mt-1! text-sm! text-brand-muted!">
-                        123 Beauty Street, Canal Road, Faisalabad, Pakistan
+                        Canal Road, Faisalabad, Pakistan
                     </p>
                 </div>
 

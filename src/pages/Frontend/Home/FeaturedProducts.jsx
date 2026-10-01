@@ -13,7 +13,7 @@ const FeaturedProducts = () => {
                         <h2 className="m-0! text-[32px]! font-semibold! leading-tight! text-brand-forest! max-[576px]:text-[25px]!">Featured Products</h2>
                     </div>
 
-                    <Link to="/catalog" className="group flex! items-center! gap-2! text-[13px]! font-semibold! text-brand-forest! no-underline! transition-all! duration-300! hover:text-brand-gold!">
+                    <Link to="/products" className="group flex! items-center! gap-2! text-[13px]! font-semibold! text-brand-forest! no-underline! transition-all! duration-300! hover:text-brand-gold!">
                         View All Products
                         <i className="fa-solid fa-arrow-right text-[11px]! transition-transform! duration-300! group-hover:translate-x-1!"></i>
                     </Link>

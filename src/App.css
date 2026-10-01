@@ -235,3 +235,11 @@ main {
 ::-webkit-scrollbar-thumb:hover {
     background: #254D3A;
 }
+
+.client-swiper {
+    margin-top: 2rem;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}

@@ -1,21 +1,24 @@
-import testPic from "../../../assets/about-pic.png"
+import Product1 from "../../../assets/product-1.png"
+import Product2 from "../../../assets/product-2.jpg"
+import Product3 from "../../../assets/product-3.png"
+import ProductPost from "../../../assets/product-post.jpeg"
 
 const instagramImages = [
     {
-        image: testPic,
+        image: ProductPost,
+        alt: 'Glowrare skincare collection',
+    },
+    {
+        image: Product1,
         alt: 'Glowrare beauty collection',
     },
     {
-        image: testPic,
+        image: Product2,
         alt: 'Glowrare skincare',
     },
     {
-        image: testPic,
+        image: Product3,
         alt: 'Glowrare beauty products',
-    },
-    {
-        image: testPic,
-        alt: 'Glowrare skincare collection',
     },
 ]
 

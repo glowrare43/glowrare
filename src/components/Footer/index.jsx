@@ -61,7 +61,7 @@ const contactInfo = [
     },
     {
         icon: "fa-solid fa-envelope",
-        content: "info@glowrare.com",
+        content: "glowrare43@gmail.com",
     },
     {
         icon: "fa-solid fa-clock",
@@ -69,7 +69,7 @@ const contactInfo = [
     },
     {
         icon: "fa-solid fa-location-dot",
-        content: "123 Beauty Street, Canal Road, Faisalabad, Pakistan",
+        content: "Canal Road, Faisalabad, Pakistan",
     },
 ];
 

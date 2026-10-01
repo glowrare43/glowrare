@@ -27,25 +27,26 @@ const Testimonials = () => {
                 <Swiper
                     modules={[Autoplay, FreeMode]}
                     slidesPerView={1}
-                    spaceBetween={24}
-                    loop={true}
-                    loopAdditionalSlides={6}
-                    freeMode={{ enabled: true, momentum: false, }}
-                    speed={5000}
-                    autoplay={{
-                        delay: 0,
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: true,
-                    }}
+                    spaceBetween={20}
                     breakpoints={{
                         640: {
                             slidesPerView: 2,
+                            spaceBetween: 24,
                         },
                         1024: {
                             slidesPerView: 3,
+                            spaceBetween: 40,
                         },
                     }}
-                    className="testimonials-swiper!"
+                    loop={true}
+                    freeMode={true}
+                    speed={2000}
+                    autoplay={{
+                        delay: 0,
+                        disableOnInteraction: false,
+                    }}
+                    allowTouchMove={false}
+                    className="client-swiper"
                 >
                     {testimonialsCardData.map((testimonial, index) => (
                         <SwiperSlide key={index}>
