@@ -82,7 +82,7 @@ Please confirm the order details.
 — *Glowrare*
 `.trim();
 
-        const whatsappNumber = "923215700213";
+        const whatsappNumber = "923200040536";
 
         const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
